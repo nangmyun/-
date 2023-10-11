@@ -1,0 +1,56 @@
+body{background-color: black;}
+h3 {color: ghostwhite;}
+h2 {color: ghostwhite;
+		font-size: 16px}
+h1 {text-align: center;
+	color: darkorange;
+	font-style: Courier New;
+	font-size: 100px;}
+
+
+header {
+  position: fixed;
+  top: 0; left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+aside{
+	width: 50%;
+	height: 600px;
+	float: right;
+	background-color: #120a3d;
+	margin-top: 48px;
+}
+bside{
+	width: 50%;
+	height: 600px;
+	float: left;
+	background-color: #120a3d;
+	margin-top: 48px;
+}
+
+
+section {
+  padding-top: 60px;
+}
+
+div{
+	background-color: black;
+	background-size: 1300px 7680px;
+	background-image: 
+	url("C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/756636.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#shadow{ text-shadow: 3px 3px red; }
+
+p{
+	text-align: center;
+}
+
+p1:hover{
+	color: #68da23;
+}
