@@ -3,17 +3,32 @@ h3 {color: ghostwhite;}
 h2 {color: ghostwhite;
 		font-size: 16px}
 h1 {text-align: center;
-	color: darkorange;
+	color: #68da23;
 	font-style: Courier New;
 	font-size: 100px;}
 
+header1{
+  height: 100%;
+  width: 100%;
+  background-color:white;
+}
 
 header {
   position: fixed;
   top: 0; left: 0;
   height: 30px;
   width: 100%;
-  background-color: #ddd;
+  background-color:white;
+}
+
+
+rightbottom{
+	position : fixed;
+	height: 60px;
+	width: 60px;
+	bottom: 10px;
+	right: 10px;
+	
 }
 
 aside{
@@ -29,6 +44,7 @@ bside{
 	float: left;
 	background-color: #120a3d;
 	margin-top: 48px;
+
 }
 
 
@@ -45,7 +61,7 @@ div{
 	background-position: center;
 }
 
-#shadow{ text-shadow: 3px 3px red; }
+#shadow{ text-shadow: 5px 5px #120a3d; }
 
 p{
 	text-align: center;
@@ -53,4 +69,11 @@ p{
 
 p1:hover{
 	color: #68da23;
+}
+
+p2:hover{ 
+	background-image: url("C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/ink.png");
+	background-size: 151px 110px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
