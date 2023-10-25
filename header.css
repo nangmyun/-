@@ -47,6 +47,13 @@ bside{
 
 }
 
+chara{
+	display: inline-block;
+	width: 100%;
+	height: 450px;
+	background-color: lightgrey;
+}
+
 
 section {
   padding-top: 60px;
