@@ -7,6 +7,17 @@
 		타이틀
 	</title>
 	<link href="header.css" rel="stylesheet" type="text/css" />
+	<script>
+		function change(){
+			let p = document.getElementById("dudung");
+			p.innerHTML="<chara>흠냐링</chara>";
+			p.innerHTML+='<input type="button" value="캐릭터1">  ';
+			p.innerHTML+='<input type="button" value="캐릭터2">  ';
+			p.innerHTML+='<input type="button" value="캐릭터3">  ';
+			p.innerHTML+='<input type="button" value="캐릭터4">  ';
+			p.innerHTML+='<input type="button" value="캐릭터5">';
+		}
+	</script>
 </head>
 
 <body>
@@ -26,7 +37,7 @@
 	</rightbottom>
 
 
-<!-- 페이지1-로고 -->
+<!-- 페이지0-로고 -->
 	<div>
 		
 			<ul id="shadow">
@@ -46,7 +57,7 @@
 
 
 
-<!-- 페이지3-게임 개요 -->
+<!-- 페이지1-게임 개요 -->
 	
 	<h3 id="a"><br><br>
 		<p>
@@ -86,11 +97,11 @@
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-	
-	<h3 id="c"><br><br><br><br>따라옴?3</h3>
-	<h3>아직 없음</h3>
+<!-- 페이지3- 캐릭터 소개 -->	
+	<h3 id="c"><br>따라옴?3</h3>
+		<p id="dudung" onclick="change()" style="font-size: 60px" ><br><br>캐릭터 소개</p>
 
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 	
 	<h3 id="d"><br><br><br><br>따라옴?4</h3>
@@ -143,5 +154,20 @@ absolute 활용해서 상단으로 이동 버튼 제작.
 1. 사전예약 빈 공간 뭘로 채우냐
 2. 스토리 페이지 좌측 어울리는 이미지 찾기
 3. 앱솔루트 버튼 추가
+--- (id, class, 동적배열, )
+기능
+버튼 클릭 시 뭔가 변함
+글 클릭하면 이미지 보이고 막
+->캐릭터 소개창에 아래에 버튼 5개 만들고 누르면 해당 캐릭터 이미지랑 소개글 뜨개?
+경고창 출력
+최근수정 시간
+창 새로 만들기
+---
+오늘 만들건 3페이지에 캐릭터 소개 창
+구성 (중앙에 '캐릭터 소개' 하나 넣고 누르면 아래꺼 나오게)
+캐릭터 소개
+배경에 네모 박스 하나 만들기
+그 하단에 캐릭터 박스 5개
+
 --- -->
 
