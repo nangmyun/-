@@ -8,15 +8,39 @@
 	</title>
 	<link href="header.css" rel="stylesheet" type="text/css" />
 	<script>
-		function change(){
+		/*function change(){
 			let p = document.getElementById("dudung");
 			p.innerHTML="<chara>흠냐링</chara>";
-			p.innerHTML+='<input type="button" value="캐릭터1">  ';
+			p.innerHTML+='<input type="button" value="캐릭터1" onclick="f(event)">  ';
 			p.innerHTML+='<input type="button" value="캐릭터2">  ';
 			p.innerHTML+='<input type="button" value="캐릭터3">  ';
 			p.innerHTML+='<input type="button" value="캐릭터4">  ';
 			p.innerHTML+='<input type="button" value="캐릭터5">';
 		}
+		*/
+		let imagefiles = [
+				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/robot.png",
+				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/envi.png",
+				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/engi.png"
+			];
+		let images = new Array();
+		
+		for(let i=0; i<imagefiles.length; i++){
+			images[i]=new Image();
+			images[i].src=imagefiles[i];
+		}
+
+		let next=1;
+		function change(img){
+			img.src=images[next].src;
+			next++;
+			next%=images.length;
+
+			let text;
+			text.innerText = "dd";
+			
+		}
+
 	</script>
 </head>
 
@@ -78,7 +102,8 @@
 					광고 문자 발송을 할 줄 모릅니다.</h2>
 					
 				<p>010 - <input type="phonenum" placeholder="0000-0000">
-				<input type="button" value="등록"></h3></p>
+				<input type="button" value="등록" id="DButton"></h3></p>
+				
 
 		</fieldset>
 		
@@ -92,14 +117,17 @@
 	<h3 style="margin-right: 100px; margin-left:0px; text-indent: 1em; font-size: 20px; line-height: 200%;">당신은 멸망한 지구를 대신할 새로운 지구를 찾아 떠나는 탐사선 보이저 호의 <span style="color:#68da23; font-size: 32px;">시스템 관리 AI</span>입니다.  새로운 지구를 찾는 과정은 유구한 시간이 필요하기 때문에 탐사선에는 영구 자원 수급 장치와 동면 상태의 탐사원들, 그리고 탐사선을 관리하는 당신이 있습니다. 순조로운 항해를 하던 보이저는 예기치 못한 소행성의 충돌로 자원 수급 장치를 잃게 됩니다. <span style="color:#68da23; font-size: 32px;">비상 사태 발생</span>으로 당신은 잠들어 있던 탐사원들을 깨우고 현재 남은 자원을 가진 채 생존을 시작합니다.</h3>
 	</aside>
 	<bside>
-		<img src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/space-station.png"width="576"height="546"alt="spaceship">
+		<img src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/space-station.png" width="576"height="546"alt="spaceship">
 	</bside>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- 페이지3- 캐릭터 소개 -->	
 	<h3 id="c"><br>따라옴?3</h3>
-		<p id="dudung" onclick="change()" style="font-size: 60px" ><br><br>캐릭터 소개</p>
+		<chara>
+			<pl style="font-size: 30px;">캐릭터 소개<br>
+			<p><img style="margin-right: 600px;" src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/robot.png" alt="." onclick="change(this)" width="30%" height="30%"><br><br></p></pl>
+		</chara>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -168,6 +196,9 @@ absolute 활용해서 상단으로 이동 버튼 제작.
 캐릭터 소개
 배경에 네모 박스 하나 만들기
 그 하단에 캐릭터 박스 5개
+---
+캐릭터n 버튼 누르면 캐릭터 이미지 넣기
+
 
 --- -->
 
