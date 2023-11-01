@@ -19,27 +19,38 @@
 		}
 		*/
 		let imagefiles = [
-				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/robot.png",
-				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/envi.png",
-				"C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/engi.png"
+				"images/robot.png",
+				"images/envi.png",
+				"images/engi.png"
 			];
 		let images = new Array();
-		
+
 		for(let i=0; i<imagefiles.length; i++){
 			images[i]=new Image();
 			images[i].src=imagefiles[i];
 		}
 
 		let next=1;
-		function change(img){
-			img.src=images[next].src;
-			next++;
-			next%=images.length;
+		function change(img) {
+            img.src = images[next].src;
 
-			let text;
-			text.innerText = "dd";
-			
-		}
+            var element = document.getElementById("textswap");
+
+            switch(next) {
+                case 0:
+                    element.innerHTML = '<span>사진 1</span>';
+                    break;
+                case 1:
+                    element.innerHTML = '<span>생태학자 : 미지의 생물에 대해 연구하며, 탐험 행성의 에너지원 입수가 효율적이다. 체력 보통, 배고픔 낮음, 정신력 높음</span>';
+                    break;
+                case 2:
+                    element.innerHTML = '<span>엔지니어 : 탐사선을 보수하며, 탐사선의 이동 속도를 업그레이드한다.</span>';
+                    break;
+            }
+
+            next++;
+            next %= images.length;
+        }
 
 	</script>
 </head>
@@ -56,13 +67,13 @@
 	</header>
 	<rightbottom>
 		<a href="#top">
-		<img src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/rocketup.png" width="60"height="60" alt="upbutton">
+		<img src="images/rocketup.png" width="60"height="60" alt="upbutton">
 		</a>
 	</rightbottom>
 
 
 <!-- 페이지0-로고 -->
-	<div>
+	<div class='backimg'>
 		
 			<ul id="shadow">
 				<br><br><br><br><br><br>
@@ -71,7 +82,6 @@
 		
 	<p><p1>
 	<script>
-		//그 뭐냐 d-day 함 만들어보자~
 		let day1 = new Date();
 		let dday = new Date(2023, 11, 12, 15, 0, 0);
 		document.write(dday.toUTCString());
@@ -117,17 +127,21 @@
 	<h3 style="margin-right: 100px; margin-left:0px; text-indent: 1em; font-size: 20px; line-height: 200%;">당신은 멸망한 지구를 대신할 새로운 지구를 찾아 떠나는 탐사선 보이저 호의 <span style="color:#68da23; font-size: 32px;">시스템 관리 AI</span>입니다.  새로운 지구를 찾는 과정은 유구한 시간이 필요하기 때문에 탐사선에는 영구 자원 수급 장치와 동면 상태의 탐사원들, 그리고 탐사선을 관리하는 당신이 있습니다. 순조로운 항해를 하던 보이저는 예기치 못한 소행성의 충돌로 자원 수급 장치를 잃게 됩니다. <span style="color:#68da23; font-size: 32px;">비상 사태 발생</span>으로 당신은 잠들어 있던 탐사원들을 깨우고 현재 남은 자원을 가진 채 생존을 시작합니다.</h3>
 	</aside>
 	<bside>
-		<img src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/space-station.png" width="576"height="546"alt="spaceship">
+		<img src="images/space-station.png" width="576"height="546"alt="spaceship">
 	</bside>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- 페이지3- 캐릭터 소개 -->	
-	<h3 id="c"><br>따라옴?3</h3>
-		<chara>
-			<pl style="font-size: 30px;">캐릭터 소개<br>
-			<p><img style="margin-right: 600px;" src="C:/Users/jkj02/OneDrive/바탕 화면/웹프로그래밍/robot.png" alt="." onclick="change(this)" width="30%" height="30%"><br><br></p></pl>
-		</chara>
+		<h3 id="c"><br>따라옴?3</h3>
+            <chara>
+                <pl style="font-size: 30px;">캐릭터 소개<br>
+                    <div class="container">
+                        <img id="slide" src="images/robot.png" alt="." onclick="change(slide)" width="30%" height="30%">
+                        <span id="textswap"></span>
+                    </div>
+                </pl>
+            </chara>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
